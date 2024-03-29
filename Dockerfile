@@ -1,5 +1,5 @@
 # Use Ubuntu as the base image
-FROM ubuntu:latest
+FROM centos:latest
 
 # Update package lists
 RUN apt-get update && apt-get upgrade -y && apt-get install -y \
