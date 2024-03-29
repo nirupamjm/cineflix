@@ -8,7 +8,7 @@ pipeline {
                 sh '''
                     #!/bin/bash
                     echo "Running my bash script"
-                    ./my_script.sh
+                    sudo sh my_script.sh
                 '''
             }
         }
