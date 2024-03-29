@@ -7,5 +7,11 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
+# Copy the script into the image
+COPY bootstrap.sh /usr/local/bin/
+
+# Make the script executable
+RUN chmod +x /usr/local/bin/bootstrap.sh
+
 # Define a default command to run when the container starts
 CMD ["/bin/bash"]
