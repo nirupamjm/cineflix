@@ -14,4 +14,4 @@ COPY bootstrap.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/bootstrap.sh
 
 # Define a default command to run when the container starts
-CMD ["/bin/bash"]
+CMD ["bootstrap.sh"]
