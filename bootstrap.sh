@@ -1,7 +1,7 @@
 #!/bin/bash
 
-sudo apt-get update
-sudo apt-get  install openjdk-8-jdk -y
+apt-get update
+apt-get  install openjdk-8-jdk -y
 
 mkdir streama
 cd /streama
