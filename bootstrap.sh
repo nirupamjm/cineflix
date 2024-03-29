@@ -2,6 +2,7 @@
 
 apt-get update
 apt-get  install openjdk-8-jdk -y
+apt install wget -y
 
 mkdir streama
 cd /streama
