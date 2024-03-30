@@ -6,6 +6,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
     # Add your desired packages here
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
+EXPOSE 80
 
 # Copy the script into the image
 COPY bootstrap.sh /usr/local/bin/
